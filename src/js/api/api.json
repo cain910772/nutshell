@@ -1,0 +1,67 @@
+
+{
+    "users": [
+        {
+            "userID": "",
+            "userName": "",
+            "Email": ""
+        }
+    ],
+    "friends": [
+        {
+            "friendsUserID": "",
+            "username": "",
+            "email": ""
+        }
+    ],
+    "relationship": [
+        {
+            "userID": "",
+            "friendsUserID": "",
+            "relationshipID": ""
+        }
+    ],
+    "chat": [
+        {
+            "userId": "",
+            "timeStamp": "",
+            "message": ""
+        
+    }
+    ],
+
+"tasks": [
+    {
+        "userID": "",
+        "newTask": ""
+    }
+    ],
+    "news": [
+        {
+            "articleID":"",
+            "userID": "",
+            "newsArticle": "",
+            "timeStamp": ""
+        }
+    ],
+    "events": [
+        {
+            "eventID":"",
+            "userID": "",
+            "eventName": "",
+            "eventDate": "",
+            "eventLocation": "",
+            
+        }
+    ],
+    "newsEvents": [
+        {
+            "newsEventID":"",
+            "userID": "",
+            "realationshipID": "",
+            "eventID": "",
+            "newsID": ""
+        }
+    ]
+}
+
