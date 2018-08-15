@@ -2,7 +2,7 @@
 {
     "users": [
         {
-            "userID": "",
+            "userID":"",
             "userName": "",
             "Email": ""
         }
@@ -50,7 +50,7 @@
             "userID": "",
             "eventName": "",
             "eventDate": "",
-            "eventLocation": "",
+            "eventLocation": ""
             
         }
     ],
