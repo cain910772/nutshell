@@ -3,19 +3,20 @@ let register = require ("register")
 
 const APIManager = Object.create(null, {
     saveUserInfo: {
-        value: (usersName,userMail) => {
+        value: (userInfo) => {
             return fetch("http://localhost:8088/users ", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
-
-                },
-                body: JSON.stringify(users)
+},
+                body: JSON.stringify(userInfo)
             })
+
                 .then(response => response.json())
         }
 
     },
+
 
 
     getAllUsers: {

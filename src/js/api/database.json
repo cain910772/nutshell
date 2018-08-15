@@ -1,67 +1,111 @@
-
 {
-    "users": [
-        {
-            "userID":"",
-            "userName": "",
-            "Email": ""
-        }
-    ],
-    "friends": [
-        {
-            "friendsUserID": "",
-            "username": "",
-            "email": ""
-        }
-    ],
-    "relationship": [
-        {
-            "userID": "",
-            "friendsUserID": "",
-            "relationshipID": ""
-        }
-    ],
-    "chat": [
-        {
-            "userId": "",
-            "timeStamp": "",
-            "message": ""
-        
-    }
-    ],
-
-"tasks": [
+  "users": [
     {
-        "userID": "",
-        "newTask": ""
+      "userName": "user",
+      "Email": "cain910772@yahoo.com",
+      "id": 1
+    },
+    {
+      "userName": "user22",
+      "Email": "jonahproject2018@gmail.com",
+      "id": 2
+    },
+    {
+      "userName": "myuser",
+      "Email": "larry@test.com",
+      "id": 3
+    },
+    {
+      "userName": "myuser2",
+      "Email": "small@yahoo.com",
+      "id": 4
+    },
+    {
+      "userName": "username",
+      "Email": "test@tes.com",
+      "id": 5
+    },
+    {
+      "userName": "username",
+      "Email": "test@test.com",
+      "id": 6
+    },
+    {
+      "userName": "username",
+      "Email": "test@test.com",
+      "id": 7
+    },
+    {
+      "userName": "cain910772",
+      "Email": "cain910772@yahoo.com",
+      "id": 8
+    },
+    {
+      "userName": "user233",
+      "Email": "fake@fake.com",
+      "id": 9
+    },
+    {
+      "userName": "user",
+      "Email": "cain910772@yahoo.com",
+      "id": 10
+    },
+    {
+      "userName": "tester",
+      "Email": "hello",
+      "id": 11
+    },
+    {
+      "userName": "test",
+      "Email": "hello",
+      "id": 12
+    },
+    {
+      "userName": "user",
+      "Email": "cain910772@yahoo.com",
+      "id": 13
+    },
+    {
+      "userName": "let",
+      "Email": "us",
+      "id": 14
+    },
+    {
+      "userName": "user",
+      "Email": "6157791843",
+      "id": 15
+    },
+    {
+      "userName": "user",
+      "Email": "cain910772@yahoo.com",
+      "id": 16
+    },
+    {
+      "userName": "user",
+      "Email": "jonahproject2018@gmail.com",
+      "id": 17
+    },
+    {
+      "userName": "helllloooo",
+      "Email": "try me",
+      "id": 18
+    },
+    {
+      "userName": "user",
+      "Email": "cain910772@yahoo.com",
+      "id": 19
+    },
+    {
+      "userName": "user",
+      "Email": "6155548376",
+      "id": 20
     }
-    ],
-    "news": [
-        {
-            "articleID":"",
-            "userID": "",
-            "newsArticle": "",
-            "timeStamp": ""
-        }
-    ],
-    "events": [
-        {
-            "eventID":"",
-            "userID": "",
-            "eventName": "",
-            "eventDate": "",
-            "eventLocation": ""
-            
-        }
-    ],
-    "newsEvents": [
-        {
-            "newsEventID":"",
-            "userID": "",
-            "realationshipID": "",
-            "eventID": "",
-            "newsID": ""
-        }
-    ]
+  ],
+  "friends": [],
+  "relationship": [],
+  "chat": [],
+  "tasks": [],
+  "news": [],
+  "events": [],
+  "newsEvents": []
 }
-
