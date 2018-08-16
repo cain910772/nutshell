@@ -1,6 +1,6 @@
-let register = require ("register")
+let loginManager2 = require ("register")
 let apiManager = require ("APIManager")
-let loginManager = require("login")
+let verify =require("login")
 
 
 

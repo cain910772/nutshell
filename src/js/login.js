@@ -1,40 +1,55 @@
-
+let apiManager = require ("APIManager")
 
 console.log("helloasshat");
 
-const loginManager = Object.create({}, {
-   loginUser: {
 
 
+// const verify = Object.create(null, {
+//     verifyUserInfo: {
+//         value:
+// apiManager.getAllUsers()
+// .then(result => {
+//     console.log(result);
 
-value :(userName , Email)=> {
+// }),
+// value:
+// function loginVerification(users){
 
-validate = function(){
-    APIManager.getAllUsers("users")
-    .then(users =>{
-    const user = users.find(user.userName===userName)
-    if (!user){
-        alert("Please try again! Cannot find user name.")
-    } else if (user.userName === userName) {
-        userManager.logInUser(user.id)
-    } else {
-        alert("Incorrect Username, try again, Jackass!.")
-    }
-    } )
-    }
-},
+//     $("#btn2").click(function () {
+//         const newEntry = {
+//             userName: document.querySelector("#username").value,
+//             Email: document.querySelector("#email").value,
+//         }
+//     let currentUser = users.find(user => {
+//         return user.userName === userName && user.email === email;
+//     });
 
-logInUser: {
-    value: (id) => {
-        sessionStorage.setItem("user", id)
-    }
-},
+//     if(currentUser){
+//         alert("yay you are logged in now!");
+//         sessionStorage.setItem("activeUser", JSON.stringify(currentUser));
+//         //take them to a new view
+//     }else{
+//         alert("you are not in our db, please register");
+//     }
 
+// })
+// }
+//     }
+// })
+// module.exports = verify
+// //     }),
+// //     value:
+// //     function validate(users){
 
-// currentUser: {
-//     value: () => { return JSON.parse(sessionStorage.getItem("user")) }
-// },
-}
-})
-validate(newEntry)
-module.exports = loginManager
+// //     document.querySelector("#username").value,
+// //     document.querySelector("#email").value;
+
+// //     let currentUser = users.find(user=>{
+// //         return user.username===username&&user.email === email;});
+
+// //     if (currentUser){
+// //         alert("Logged in");
+// //         sessionStorage.setItem("activeUser",JSON.stringify(currentUser));
+// //     } else {
+// //         alert("Please Register");
+// //  }
