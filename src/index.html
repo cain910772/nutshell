@@ -10,22 +10,53 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div id ="jumboTron"class="jumbotron jumbotron-fluid">
       <div class="container">
      <center>   <h1>Your favorite app!!</h1>
         <h2>Welcome to Nutshell!!</h2></center>
+<!-- register modal -->
+<center> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Register New Account or Login
+    </button><br><button id ="logOut" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Logout</button></center>
+ 
+
       </div>
     </div>
 
-<!-- register modal -->
-   <center> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Register New Account or Login
-    </button></center>
+    <section id = "hideMeBeforeLogin">
+    <div class="container">
+      <div class="row">
+        <div id="friends" class="col">
+      Friends
+        </div>
+        <div id ="chat"class="col-6">
+         Chat
+        </div>
+        <div id ="tasks"class="col">
+          Tasks
+        </div>
+      </div>
+        <div id ="events"class="col-5">
+          Events
+        </div>
+        <div id ="news" class="col">
+         News
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+
+
     
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

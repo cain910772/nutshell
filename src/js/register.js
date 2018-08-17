@@ -1,5 +1,5 @@
 let apiManager = require("APIManager")
-let loginManager2 = require("login")
+
 
 
 
@@ -25,13 +25,13 @@ function loginVerification(users) {
         });
 
         if (currentUser) {
-            alert("yay you are logged in now!");
+            alert("Success!");
             sessionStorage.setItem("activeUser", JSON.stringify(currentUser));
-            //take them to a new view
+            $("#exampleModal").modal("hide");
+            $("#hideMeBeforeLogin").toggle()            //take them to a new view
         } else {
-            alert("you are not in our db, please register");
-        }
-
+            alert("Please Register");
+         {
 
         apiManager.getAllUsers().then(allUsers => {
             let registeringUser = {
@@ -44,35 +44,32 @@ function loginVerification(users) {
                     Email: document.querySelector("#email").value,
                 }
 
+                }
+
                     .then(allUsers => {
                         //loop over the users in the database and compare values from the form
                         for (let i = 0; i < allUsers.length; i++) {
                             if (allUsers[i].username === registeringUser.username || allUsers[i].email === registeringUser.email) {
-                                alert("your username AND email must be unique. We found a duplicate in your database.")
+                                alert("User Name or Email in Use, Please Try Again.")
                             } else {
                                 alert("woooo! you're logged in!")
                                 //add them to db! and theeeeeennnn
                                 apiManager.addUserToDb(registeringUser)
                                     .then(userThatWasAdded => {
                                         sessionStorage.setItem("activeUser", JSON.stringify(userThatWasAdded));
+
+
                                     })
-                            }  //change the view
-                        }
-                    }
-                    )
-            }
-            )
-        }
+
+
+                    }}}))})}}})}
+
+
+                    $("#logOut").click(function(){
+                        sessionStorage.clear()
+                        alert("Logout Complete")
+            }  //change the view
         )
-    }
-    )
-}
-
-
-
-
-
-
 
 //get users from the database
 
