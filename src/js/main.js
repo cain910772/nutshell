@@ -6,4 +6,4 @@ let buildLanding = require("landingPage")
 $(document).ready(makeNewTask())
 
 
-console.log("hello");
+// console.log("hello");

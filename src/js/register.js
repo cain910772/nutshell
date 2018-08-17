@@ -1,4 +1,5 @@
-let apiManager = require("APIManager")
+let apiManager = require("./APIManager")
+let makeNewTask =require("./taskForm")
 
 
 
@@ -28,7 +29,9 @@ function loginVerification(users) {
             alert("Success!");
             sessionStorage.setItem("activeUser", JSON.stringify(currentUser));
             $("#exampleModal").modal("hide");
-            $("#hideMeBeforeLogin").toggle()            //take them to a new view
+            // $("#hideMeBeforeLogin").toggle();
+            makeNewTask(currentUser);
+                     //take them to a new view
         } else {
             alert("Please Register");
          {
