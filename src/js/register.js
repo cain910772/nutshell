@@ -71,9 +71,9 @@ function loginVerification(users) {
                     $("#logOut").click(function(){
                         sessionStorage.clear()
                         alert("Logout Complete")
-            }  //change the view
+            }
         )
 
-//get users from the database
+
 
 console.log("helloooooooooo")
