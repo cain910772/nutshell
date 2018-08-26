@@ -29,7 +29,7 @@ function loginVerification(users) {
             alert("Success!");
             sessionStorage.setItem("activeUser", JSON.stringify(currentUser));
             $("#exampleModal").modal("hide");
-            // $("#hideMeBeforeLogin").toggle();
+            setInterval(function(){ location.reload(); }, 1000);
             makeNewTask(currentUser);
                      //take them to a new view
         } else {
@@ -71,6 +71,7 @@ function loginVerification(users) {
                     $("#logOut").click(function(){
                         sessionStorage.clear()
                         alert("Logout Complete")
+                        setInterval(function(){ location.reload(); }, 1000);
             }
         )
 

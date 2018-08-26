@@ -1,23 +1,21 @@
 
 const newChat = (currentUser) => {
-    const putToPage = $("#chat")
+    const putToPage = $("chat")
     console.log(putToPage);
     putToPage.append(
-            `
-            <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Chat Box</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Select From Friends List To Chat</h6>
-              <p class="card-text">Select From Friends List To Chat</p>
-              <a href="#" class="card-link">New Message</a>
-              <a href="#" class="card-link">Edit Message</a>
-              <a href="#" class="card-link">Delete Message</a>
-            </div>
-          </div>
-    
-            `
+
         )
     }
-    console.log("sdhyvdsyfvdsfc");
+ let data = JSON.parse(sessionStorage.getItem("activeUser"))
+// let appendMe = document.getElementById("test2").appendChild("Hello")
+
+ let chat = document.getElementById("testMe");
+let chatParagraph = document.createElement("p")
+let words = ("Welcome to Nutshell"  +" " + data.userName)
+chatParagraph.textContent = words
+chat.appendChild(chatParagraph)
+
+
+    console.log(data.userName);
 
     module.exports = newChat
