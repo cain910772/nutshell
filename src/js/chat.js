@@ -1,11 +1,9 @@
+let apiManager = require ("APIManager")
 
-const newChat = (currentUser) => {
-    const putToPage = $("chat")
-    console.log(putToPage);
-    putToPage.append(
 
-        )
-    }
+const makeNewChat = (currentUser) => {
+
+
  let data = JSON.parse(sessionStorage.getItem("activeUser"))
 // let appendMe = document.getElementById("test2").appendChild("Hello")
 
@@ -15,7 +13,35 @@ let words = ("Welcome to Nutshell"  +" " + data.userName)
 chatParagraph.textContent = words
 chat.appendChild(chatParagraph)
 
+ function getMe (){
+      return fetch(" http://localhost:8088/chat")
+      .then(r => r.json())}
 
-    console.log(data.userName);
+$("#chatButton").click(function () {
+let userChat={
+ userId:data.id,
+  message: $("#chatMe").val()
 
-    module.exports = newChat
+
+}
+setInterval(function(){ location.reload(); }, 1000);
+apiManager.saveChatInfo(userChat)
+    .then(result => {
+
+    }
+        )
+      })
+getMe()
+.then(function (r) {
+  r.forEach(chat => {
+let ChatDiv = `<div>
+<p>${chat.message}</p>
+</div>`
+console.log(chat.message);
+
+$("#finalChat").append(ChatDiv)
+
+});
+})
+}
+    module.exports = makeNewChat

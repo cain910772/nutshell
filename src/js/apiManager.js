@@ -16,6 +16,19 @@ const APIManager = Object.create(null, {
         }
 
     },
+    saveChatInfo: {
+        value: (chatInfo) => {
+            return fetch("http://localhost:8088/chat ", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+},
+                body: JSON.stringify(chatInfo)
+            })
+
+                .then(response => response.json())
+        }
+    },
 
 
 
@@ -23,8 +36,10 @@ const APIManager = Object.create(null, {
         value: () => {
             return fetch(" http://localhost:8088/users")
             .then(r => r.json())
-        }
-    },
+        },
+
+
+
     deleteEntry: {
         value: (id) => {
             return fetch(` http://localhost:8088/users ${id}`, {
@@ -33,6 +48,6 @@ const APIManager = Object.create(null, {
                 .then(r => r.json())
         }
     }
+}
 })
-
 module.exports = APIManager

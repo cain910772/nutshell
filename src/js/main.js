@@ -5,7 +5,7 @@ let buildLanding = require("landingPage")
 let makeNews = require("news")
 let makeEvent = require("./events")
 let friendsList =require("friends")
-let newChat = require("./chat")
+let makeNewChat = require("./chat")
 
 
 
@@ -13,6 +13,6 @@ $(document).ready(makeNewTask());
 $(document).ready(makeNews());
 $(document).ready(friendsList())
 $(document).ready(makeEvent())
-$(document).ready(newChat())
+$(document).ready(makeNewChat())
 
 // console.log("hello");

@@ -464,11 +464,182 @@
       "userName": "mkmnyplspls09101977@gmail.com",
       "Email": "mkmnyplspls09101977@gmail.com",
       "id": 109
+    },
+    {
+      "userName": "username",
+      "Email": "joe@shepherd.com",
+      "id": 110
     }
   ],
   "friends": [],
   "relationship": [],
-  "chat": [],
+  "chat": [
+    {
+      "id": 1,
+      "userid": 1,
+      "message": "whats up"
+    },
+    {
+      "id": 2,
+      "userid": 2,
+      "message": "not much"
+    },
+    {
+      "id": 1,
+      "userid": 3,
+      "message": "shit doing nothing"
+    },
+    {
+      "id": 2,
+      "userid": 4,
+      "message": "studying over here"
+    },
+    {
+      "userId": 28,
+      "message": "zzzzzzzzzzzz",
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "message": "hdschsdhchc",
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzzzz",
+      "id": 5
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzzzz",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "message": "heee",
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzzz",
+      "id": 8
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzzz",
+      "id": 9
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzzz",
+      "id": 10
+    },
+    {
+      "userId": 5,
+      "message": "ytttttt",
+      "id": 11
+    },
+    {
+      "userId": 5,
+      "message": "ytttttt",
+      "id": 12
+    },
+    {
+      "userId": 5,
+      "message": "ytttttt",
+      "id": 13
+    },
+    {
+      "userId": 5,
+      "message": "ytttttt",
+      "id": 14
+    },
+    {
+      "userId": 5,
+      "message": "zzzz",
+      "id": 15
+    },
+    {
+      "userId": 5,
+      "message": "hello",
+      "id": 16
+    },
+    {
+      "userId": 5,
+      "message": "hhhhhhhh",
+      "id": 17
+    },
+    {
+      "userId": 5,
+      "message": "qqqqq",
+      "id": 18
+    },
+    {
+      "userId": 5,
+      "message": "qqqqqqqqq",
+      "id": 19
+    },
+    {
+      "userId": 5,
+      "message": "aaaaaa",
+      "id": 20
+    },
+    {
+      "userId": 5,
+      "message": "aaaaa",
+      "id": 21
+    },
+    {
+      "userId": 5,
+      "message": "aaaaa",
+      "id": 22
+    },
+    {
+      "userId": 5,
+      "message": "aaaaa",
+      "id": 23
+    },
+    {
+      "userId": 5,
+      "message": "zzzzz",
+      "id": 24
+    },
+    {
+      "userId": 5,
+      "message": "zzzzzvvvvv",
+      "id": 25
+    },
+    {
+      "userId": 5,
+      "message": "hello ",
+      "id": 26
+    },
+    {
+      "userId": 5,
+      "message": "ddddddd",
+      "id": 27
+    },
+    {
+      "userId": 5,
+      "message": "ddddddd",
+      "id": 28
+    },
+    {
+      "userId": 5,
+      "message": "ffffffff",
+      "id": 29
+    },
+    {
+      "userId": 5,
+      "message": "fuck off",
+      "id": 30
+    },
+    {
+      "userId": 5,
+      "message": "try me",
+      "id": 31
+    }
+  ],
   "tasks": [],
   "news": [],
   "events": [],
